@@ -1,0 +1,12 @@
+<div>
+  <button (click)="onClick('all')" type="button">
+         all messages</button>
+  <button (click)="onClick('social')" type="button">
+         social messages</button>
+  <button (click)="onClick('primary')" type="button">
+         primary messages</button>
+</div>
+
+<div *ngFor="let content of messages">
+  {{content}}
+</div>
